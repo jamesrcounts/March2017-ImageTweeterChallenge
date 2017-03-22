@@ -1,0 +1,12 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AddPerm",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "REPLACE-WITH-A-VALID-ACTION",
+      "Resource": "arn:aws:s3:::REPLACE-WITH-YOUR-BUCKET-NAME/*"
+    }
+  ]
+}
