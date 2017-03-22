@@ -40,7 +40,7 @@ For level 1, you will need to create an [Amazon S3](http://aws.amazon.com/s3/) b
 
 - Run the following in terminal as you need, from the `ImageTweeter` directory.
 
-	- To refresh dependencies: `donet restore`
+	- To refresh dependencies: `dotnet restore`
 	- To build the lambda function: `dotnet build`
 	- To publish the lambda function: `dotnet publish`
 	- To deploy the lambda function: `dotnet lambda deploy-function -fn lamda-sharp-image-tweeter`
