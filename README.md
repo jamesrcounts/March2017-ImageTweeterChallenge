@@ -26,7 +26,7 @@ For level 1, you will need to create an [Amazon S3](http://aws.amazon.com/s3/) b
 - Create an [AWS IAM](https://aws.amazon.com/iam/) policy for the [AWS Lambda](http://aws.amazon.com/lambda/) function [AWS IAM](https://aws.amazon.com/iam/) role.
 	
 	- Allow it to create and put objects to [Amazon CloudWatch](http://aws.amazon.com/cloudwatch/).
-	- If using the console to create the IAM role, choose `CloudWatchLogFullAccess`.
+	- If using the console to create the IAM role, choose `CloudWatchLogsFullAccess`.
    - See policy: [aws/policies/lambda_role_policy_level_1.json](aws/policies/lambda_role_policy_level_1.json)
  
 - Create an [AWS IAM](https://aws.amazon.com/iam/) role for the [AWS Lambda](http://aws.amazon.com/lambda/) function.
@@ -40,7 +40,7 @@ For level 1, you will need to create an [Amazon S3](http://aws.amazon.com/s3/) b
 
 - Run the following in terminal as you need, from the `ImageTweeter` directory.
 
-	- To refresh dependencies: `donet restore`
+	- To refresh dependencies: `dotnet restore`
 	- To build the lambda function: `dotnet build`
 	- To publish the lambda function: `dotnet publish`
 	- To deploy the lambda function: `dotnet lambda deploy-function -fn lamda-sharp-image-tweeter`
